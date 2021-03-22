@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activities.HomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_backgroud_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="178dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/orbitron"
+        android:lineSpacingMultiplier="1.2"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332"
+        tools:text="TEBOGO" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="133dp"
+        android:layout_height="31dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="01/01/2000" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="204dp"
+        android:layout_height="87dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdate"
+        app:layout_constraintVertical_bias="0.758"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/tvtemperature"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:fontFamily="@font/orbitron"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_backgroud_view"
+        app:layout_constraintVertical_bias="0.094"
+        tools:text="O" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
