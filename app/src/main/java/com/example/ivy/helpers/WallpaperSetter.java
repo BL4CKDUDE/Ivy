@@ -22,18 +22,18 @@ public class WallpaperSetter {
         String hour = splitTime[0];
         int hourInt = Integer.parseInt(hour);
 
-        if(hourInt >= 0 &&  hourInt <= 10){
+//        if(hourInt >= 0 &&  hourInt <= 10){
             bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
-                    resources, R.drawable.morning_tower), point.x, point.y, true);
-
-        }else if(hourInt > 10 && hourInt < 18){
-            bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
-                    resources, R.drawable.midday_palms), point.x, point.y, true);
-        } else {
-            bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
-                    resources, R.drawable.night_city), point.x, point.y, true);
-
-        }
+                    resources, R.mipmap.morning_tower), point.x, point.y, true);
+//
+//        }else if(hourInt > 10 && hourInt < 18){
+//            bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
+//                    resources, R.mipmap.midday_palms), point.x, point.y, true);
+//        } else {
+//            bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
+//                    resources, R.mipmap.night_city), point.x, point.y, true);
+//
+//        }
 
         return bmp;
     }
