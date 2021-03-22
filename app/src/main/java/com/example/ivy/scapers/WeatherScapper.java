@@ -29,7 +29,7 @@ public class WeatherScapper {
                 try{
                     document = Jsoup.connect(Constants.WEATHER_GOOGLE_URL).ignoreHttpErrors(true).timeout(4000).get();
                     Elements temp = document.getElementsByClass("wob_t TVtOme");
-                
+
                     tempString = temp.text();
                     StringDebugger.Logger(tempString);
                     fragmentHomeSlideBinding.tvtemperature.setText(tempString+"°");
