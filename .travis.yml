@@ -3,13 +3,13 @@ dist: trusty
 android:
   components:
     - build-tools-26.0.2
-    - android-28
+    - android-26
     - extra
 
       # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-    - android-22
-    - sys-img-armeabi-v7a-android-22
+    - android-26
+    - sys-img-armeabi-v7a-android-26
 
   licenses:
     - 'android-sdk-preview-license-52d11cd2'
