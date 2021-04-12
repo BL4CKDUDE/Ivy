@@ -28,6 +28,7 @@ before_install:
 
 script:
   - ./gradlew assembleDebug
+  - ./gradlew build jacocoTestReport assembleAndroidTest
   - echo "Travis branch is $TRAVIS_BRANCH"
   - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
 
@@ -36,3 +37,6 @@ before_script:
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
+
+  after_success:
+  - bash <(curl -s https://codecov.io/bash)
